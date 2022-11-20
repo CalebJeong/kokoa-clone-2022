@@ -1,32 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Jua&family=Open+Sans:ital,wght@0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Open+Sans:wght@400;600&display=swap');
+@import "reset.css";
+@import "variables.css";
+
+/* Compnents */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+
+
+/* Screens */
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
 body {
     font-family: 'Jua', sans-serif;
     font-family: 'Open Sans', sans-serif;
+    height: 110vh;
 }
 
-.status-bar {
-    display: flex;
-    justify-content: center;
-}
-
-.status-bar__column {
-    width: 33%;
-}
-.status-bar__column:first-child span{
-    margin-right: 5px;
-}
-
-.status-bar__column:nth-child(2){
-    display: flex;
-    justify-content: center;
-}
-
-.status-bar__column:last-child{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.fa-battery-full {
-    margin: 0px 5px;
+.main-screen {
+    padding: 0px var(--horizontal-space);
 }

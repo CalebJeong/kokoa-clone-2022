@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>welcome to Kokoa Clone</title>
+    <title>my big picture</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="status-bar">
         <div class="status-bar__column">
             <span>No Service</span>
-            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-lg fa-solid fa-wifi"></i>
         </div>
         <div class="status-bar__column">
-            <span>18:43</span>
+            <span>18: 43</span>
         </div>
         <div class="status-bar__column">
             <span>110%</span>
-            <i class="fa-solid fa-battery-full"></i>
-            <i class="fa-solid fa-bolt"></i>
+            <i class="fa-lg fa-solid fa-battery-full"></i>
+            <i class="fa-lg fa-solid fa-bolt"></i>
         </div>
     </div>
 
     <header class="welcome-header">
         <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
-        <p class="welcome-header__text">If you have a kako Account, log in with your email or phone number</p>
-    </header class="welcome-header">
+        <p class="welcome-header__text">
+            If you have a Kokoa Account, log in with your email or phone number
+        </p>
+    </header>
 
-    <form>
-        <input type="text" placeholder="Email or phone number">
-        <input type="password" placeholder="Passworld">
-        <button>Log In</button>
-        <a href="#">Find Kokoa Account or Password</a>
+    <form action="friends.html" method="get" class="login-form">
+        <input name="username" class="login-form__email" type="text" placeholder="Email ofr phone number">
+        <input name="password" class="login-form__password" type="password" placeholder="Password">
+        <button class="login-form__btn">Log In</button>
+        <a class="login-form__link  " href="#">Find Kokoa Account or Password</a>
     </form>
 
     <script 
-    src="https://kit.fontawesome.com/37fb2780ec.js" 
-    crossorigin="anonymous">
+        src="https://kit.fontawesome.com/37fb2780ec.js"
+        crossorigin="anonymous">
     </script>
 </body>
 </html>
